@@ -1,0 +1,2 @@
+/usr/bin/ar cr libedge2box.a  CMakeFiles/edge2box.dir/edgeBoxes.cpp.o
+/usr/bin/ranlib libedge2box.a

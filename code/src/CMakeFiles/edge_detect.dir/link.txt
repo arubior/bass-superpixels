@@ -1,0 +1,2 @@
+/usr/bin/ar cr libedge_detect.a  CMakeFiles/edge_detect.dir/edgesDetect.cpp.o CMakeFiles/edge_detect.dir/edgesNms.cpp.o CMakeFiles/edge_detect.dir/model.cpp.o CMakeFiles/edge_detect.dir/structureEdge.cpp.o CMakeFiles/edge_detect.dir/chnsFunctions.cpp.o
+/usr/bin/ranlib libedge_detect.a
