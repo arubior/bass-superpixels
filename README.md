@@ -33,3 +33,9 @@ _International Conference on Pattern Recognition (ICPR), 2016_
    year = 2016,
 }
 ```
+
+Some tools for this code are extracted and/or modified from [D.Stutz](https://github.com/davidstutz/seeds-revised)'s work [1].
+ 
+ [1] **D. Stutz, A. Hermans, B. Leibe.**
+     Superpixel Segmentation using Depth Information.
+     _Bachelor thesis, RWTH Aachen University, Aachen, Germany, 2014._
