@@ -20,10 +20,10 @@ For instance, from the root folder of this repo:
 ```
 $ ./code/build/bass imgs/ -s 50
 ```
-If you use this code, please cite the following paper:
+If you use this code, please cite the following [paper](http://hi.cs.waseda.ac.jp/~esimo/publications/RubioICPR2016.pdf):
 
-**Boundary-Aware Superpixel Segmentation**
-Antonio Rubio, Longlong Yu, Edgar Simo-Serra, Francesc Moreno-Noguer
+**Boundary-Aware Superpixel Segmentation**  
+Antonio Rubio, Longlong Yu, Edgar Simo-Serra, Francesc Moreno-Noguer  
 _International Conference on Pattern Recognition (ICPR), 2016_
 ```
 @InProceedings{RubioICPR2016,
