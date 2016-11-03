@@ -2,7 +2,7 @@
 ## How do I get set up?
 Clone the repo, go to code folder and compile as follows (you will need to remove an extra space created in link.txt):
 ```
-$ cd repo
+$ cd code
 $ mkdir build
 $ cd build
 $ cmake ..
