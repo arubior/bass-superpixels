@@ -21,7 +21,8 @@ For instance, from the root folder of this repo:
 $ ./code/build/bass imgs/ -s 50
 ```
 If you use this code, please cite the following paper:
-*Boundary-Aware Superpixel Segmentation*
+
+**Boundary-Aware Superpixel Segmentation**
 Antonio Rubio, Longlong Yu, Edgar Simo-Serra, Francesc Moreno-Noguer
 _International Conference on Pattern Recognition (ICPR), 2016_
 ```
