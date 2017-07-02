@@ -29,7 +29,7 @@ _International Conference on Pattern Recognition (ICPR), 2016_
 ```
 @InProceedings{RubioICPR2016,
    author = {Antonio Rubio and Longlong Yu and Edgar Simo-Serra and Francesc Moreno-Noguer},
-   title = {{Boundary-Aware Superpixel Segmentation}},
+   title = {{BASS: Boundary-Aware Superpixel Segmentation}},
    booktitle = "Proceedings of the International Conference on Pattern Recognition (ICPR)",
    year = 2016,
 }
