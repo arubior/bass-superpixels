@@ -28,16 +28,6 @@ INCLUDE_DIRECTORIES(${Boost_INCLUDE_DIRS}/boost)
 LINK_DIRECTORIES(${Boost_LIBRARY_DIRS})
 
 include_directories(./include/)
-include_directories(/home/wideeyes/fast-rcnn/caffe-fast-rcnn/build/src)
-include_directories(/home/wideeyes/fast-rcnn/caffe-fast-rcnn/include/)
-# include_directories(/home/arubio/fast-rcnn/caffe-fast-rcnn/build/src)
-# include_directories(/home/arubio/fast-rcnn/caffe-fast-rcnn/include/)
-
-include_directories(/home/wideeyes/caffe/build/src)
-include_directories(/home/wideeyes/caffe/include)
-
-# include_directories(/home/arubio/Documents/caffe/include)
-# include_directories(/home/arubio/Documents/caffe/build/src)
 
 option(USE_GPU "Use GPU instead of CPU" 0)
 
@@ -51,7 +41,6 @@ include_directories(/opt/OpenBLAS/include)
 
 LINK_DIRECTORIES(/opt/OpenBLAS/lib)
 add_subdirectory(src)
-
 
 set(BUILD_SHARED_LIBS OFF)
 # if(BUILD_SHARED_LIBS)
@@ -76,17 +65,16 @@ include_directories(include)
 
 include_directories( ${OpenCV_INCLUDE_DIRS} ${Boost_INCLUDE_DIRS})
 
-add_library( FastRCNN src/FastRCNN.cpp src/SceneFeatures.cpp)
+# add_library( FastRCNN src/FastRCNN.cpp src/SceneFeatures.cpp)
 
 add_executable( bass bass.cpp Tools.cpp )
 
-set_target_properties(FastRCNN PROPERTIES COMPILE_FLAGS "-fPIC")
+# set_target_properties(FastRCNN PROPERTIES COMPILE_FLAGS "-fPIC")
 set_target_properties(bass PROPERTIES COMPILE_FLAGS "-fPIC")
 if (USE_GPU)
-    target_link_libraries( bass FastRCNN ${Boost_LIBRARIES} ${Caffe_LINK} ${OpenCV_LIBS} edge2box edge_detect math boost_thread boost_system ${TBB_LIBRARIES} openblas lapack blas cudart cublas curand glog protobuf snappy lmdb hdf5_hl hdf5)
+    # target_link_libraries( bass FastRCNN ${Boost_LIBRARIES} ${Caffe_LINK} ${OpenCV_LIBS} edge2box edge_detect math boost_thread boost_system ${TBB_LIBRARIES} openblas lapack blas cudart cublas curand glog protobuf snappy lmdb hdf5_hl hdf5)
+    target_link_libraries( bass ${Boost_LIBRARIES} ${Caffe_LINK} ${OpenCV_LIBS} edge2box edge_detect math boost_thread boost_system ${TBB_LIBRARIES} openblas lapack blas cudart cublas curand glog protobuf snappy lmdb hdf5_hl hdf5)
 else()
-    target_link_libraries( bass FastRCNN ${Boost_LIBRARIES} ${Caffe_LINK} ${OpenCV_LIBS} edge2box edge_detect math boost_thread boost_system ${TBB_LIBRARIES} openblas lapack glog protobuf snappy lmdb hdf5_hl hdf5 opencv_core)
+    # target_link_libraries( bass FastRCNN ${Boost_LIBRARIES} ${Caffe_LINK} ${OpenCV_LIBS} edge2box edge_detect math boost_thread boost_system ${TBB_LIBRARIES} openblas lapack glog protobuf snappy lmdb hdf5_hl hdf5 opencv_core)
+    target_link_libraries( bass ${Boost_LIBRARIES} ${Caffe_LINK} ${OpenCV_LIBS} edge2box edge_detect math boost_thread boost_system ${TBB_LIBRARIES} openblas lapack glog protobuf snappy lmdb hdf5_hl hdf5 opencv_core)
 endif()
-
-
-
